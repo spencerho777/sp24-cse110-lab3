@@ -77,5 +77,49 @@
         </video>
     </section>
 
+    <section>
+        <h2>Feedback Form</h2>
+        <form>
+            <fieldset>
+                <legend>Your Feedback</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="meeting-date">Date of Attendance:</label>
+                <input type="date" id="meeting-date" name="meeting-date">
+
+                <p>Which aspects did you like?</p>
+                <label><input type="checkbox" name="aspects" value="timing"> Timing</label>
+                <label><input type="checkbox" name="aspects" value="content"> Content</label>
+
+                <p>Session Effectiveness:</p>
+                <label><input type="radio" name="effectiveness" value="high"> High</label>
+                <label><input type="radio" name="effectiveness" value="medium"> Medium</label>
+                <label><input type="radio" name="effectiveness" value="low"> Low</label>
+
+                <label for="improvements">Suggestions for Improvement:</label>
+                <textarea id="improvements" name="improvements"></textarea>
+
+                <label for="topic">Preferred Topics:</label>
+                <input list="topics" id="topic" name="topic">
+                <datalist id="topics">
+                    <option value="Productivity">
+                    <option value="Technology">
+                    <option value="Health">
+                </datalist>
+
+                <label for="session">Select the next session type:</label>
+                <select id="session" name="session">
+                    <option value="workshop">Workshop</option>
+                    <option value="lecture">Lecture</option>
+                    <option value="discussion">Discussion</option>
+                </select>
+
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
   </body>
 </html>
