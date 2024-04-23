@@ -35,11 +35,6 @@ header, section {
     padding: 10px 20px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-
-    & audio {
-        border-color: aqua;
-        border-width: 2px;
-    }
 }
 
 h1, h2, h3 {
@@ -100,6 +95,10 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
+    & audio {
+        border-color: aqua;
+        border-width: 2px;
+    }
 }
 
 section ul {
@@ -141,7 +140,7 @@ body {
 /* ID Selector, Class Selector, Attribute Selector */
 #name, .feedback {
     border: 2px solid var(--accent-color);
-    color: color(lab 56% -100 100);
+    color: color(var(--accent-color) 56% -100 100);
 }
 
 input[type="date"] {
