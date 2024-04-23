@@ -96,7 +96,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
-    & audio {
+    &:hover {
         border-color: aqua;
         border-width: 2px;
     }
