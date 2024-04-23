@@ -12,7 +12,7 @@
     --text-color: #34495e; /* Dark grey text */
     --rich-black: color(display-p3 0 0 0); /* Using Display P3 color space for deeper blacks */
     --vivid-red: color(display-p3 1 0 0); /* Vivid red using Display P3 color space */
-    --mixed-theme-color: color-mix(in srgb, var(--vivid-red) 50%, var(--primary-color) 50%); /* Mixing vivid red and primary color */
+    --mixed-theme-color: color-mix(in srgb, var(--vivid-red) 90%, var(--background-color) 5%); /* Mixing vivid red and primary color */
 
 }
 
@@ -83,7 +83,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--mixed-theme-color);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -140,7 +140,7 @@ body {
 /* ID Selector, Class Selector, Attribute Selector */
 #name, .feedback {
     border: 2px solid var(--accent-color);
-    color: color(var(--accent-color) 56% -100 100);
+    color: color(display-p3 0 0 0 / 0.9);
 }
 
 input[type="date"] {
