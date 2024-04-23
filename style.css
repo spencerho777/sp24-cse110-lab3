@@ -16,6 +16,10 @@
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -31,6 +35,11 @@ header, section {
     padding: 10px 20px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+
+    & audio {
+        border-color: aqua;
+        border-width: 2px;
+    }
 }
 
 h1, h2, h3 {
@@ -93,6 +102,22 @@ section {
     gap: 10px;
 }
 
+section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+section > h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h2 ~ ol {
+    border-top: 2px dashed var(--primary-color);
+    padding-top: 10px;
+}
+
+
 body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -129,6 +154,10 @@ button:hover, button:focus {
     color: #fff;
     border: none;
     transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    min-width: 1px;
 }
 
 button:active{
@@ -180,4 +209,3 @@ datalist {
     margin: auto;
 }
 
-/* Improve overall design and ensure functional styling across various components */
