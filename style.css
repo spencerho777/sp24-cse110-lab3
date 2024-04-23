@@ -62,13 +62,15 @@ img {
 }
 
 audio, video {
-    display: block;
+    display: inline;
     width: 100%;
+    position: relative;
 }
 
 /* Sizing */
 video, audio {
     max-width: 500px; /* Constrain video and audio player size */
+    min-width: 100px;
     margin: auto; /* Center aligning */
 }
 
@@ -95,6 +97,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    justify-content: center;
 }
 
 /* Responsiveness */
@@ -126,6 +129,10 @@ button:hover, button:focus {
     color: #fff;
     border: none;
     transition: background-color 0.3s ease;
+}
+
+button:active{
+    box-shadow: 2px 2px 2px #bdc3c7;
 }
 
 input:focus {
